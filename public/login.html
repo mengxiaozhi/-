@@ -30,7 +30,7 @@
                 <input type="password" class="form-control" id="pwd" placeholder="生日（例：0315）">
                 <span id="helpBlock2" class="help-block">生日不能為空</span>
             </div>
-                <span id="helpBlock3" class="help-block">信息錯誤</span>
+                <span id="helpBlock3" class="help-block">厚生勞働省未存在您的健康紀錄，請迅速前往醫療院所</span>
             
             <button type="button" class="btn btn-default" id="login"><h3>獲取健康證明</h3></button>
             </form>
@@ -74,10 +74,11 @@
                  hb2.style.display = 'block';
              }else{ //登录成功
                  for(var i=0;i<jsonObj.length;i++){
-                     if( uname==jsonObj[i]['name'] && pwd==jsonObj[i]['psw'] )
+                    if( uname==jsonObj[i]['name'] && pwd==jsonObj[i]['psw'])
                          window.location.href='code0.html?name='+uname+'&psw='+pwd;
                      else{
-                        window.location.href='code1.html?name='+uname+'&psw='+pwd;
+
+                        hb3.style.display = 'block';
                      }
                  }
              }
