@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>苗栗國 厚生勞働省 Covid-19數位健康證明申請平台</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="main.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com"> 
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/ROC_Ministry_of_Labor_Logo.svg/1200px-ROC_Ministry_of_Labor_Logo.svg.png" alt="">
+        <h2>苗栗國 厚生勞働省</h2>
+    </header>
+        <h1>Covid-19數位健康證明申請平台</h1>
+        <div class="wrap">
+            <form>
+            <div class="form-group">
+                <label for="username"><h3>國民健康保險編號</h3></label>
+                <input type="text" class="form-control" id="username" placeholder="國民健康保險編號">
+                <span id="helpBlock1" class="help-block">國民健康保險編號不能為空</span>
+            </div>
+            <div class="form-group">
+                <label for="pwd"><h3>生日（例：0315）</h3></label>
+                <input type="password" class="form-control" id="pwd" placeholder="生日（例：0315）">
+                <span id="helpBlock2" class="help-block">生日不能為空</span>
+            </div>
+                <span id="helpBlock3" class="help-block">信息錯誤</span>
+            
+            <button type="button" class="btn btn-default" id="login"><h3>獲取健康證明</h3></button>
+            </form>
+        </div>
+  
+     <script type="text/javascript">
+         var nameInput = document.getElementById("username");
+         var pwdInput = document.getElementById("pwd");
+         var loginBtn = document.getElementById("login");
+         var hb1 = document.getElementById("helpBlock1");
+         var hb2 = document.getElementById("helpBlock2");
+         var hb3 = document.getElementById("helpBlock3");
+         var xmlHttp = new XMLHttpRequest();
+         var jsonObj = null;
+         xmlHttp.onload = function(){
+             if(xmlHttp.readyState == 4){ //表示响应完成
+                 if(xmlHttp.status == 200){ //响应码为200  表示服务器正确响应
+                     //获取响应内容
+                     txt = xmlHttp.responseText ;
+                     //把json字符串解析成json对象
+                     jsonObj = JSON.parse(txt);
+                     console.info(jsonObj)
+                     
+                 }else{
+                     console.info('数据返回失败！状态代码：'+xmlHttp.status+'状态信息：'+xmlHttp.statusText);
+                 }
+             }
+         }
+         xmlHttp.open('GET','https://raw.githubusercontent.com/mengxiaozhi/dowload/gh-pages/data.json',true);
+         xmlHttp.send();
+  
+         loginBtn.onclick = function(){
+  
+             //获取用户名和密码
+             var uname = nameInput.value;
+             var pwd = pwdInput.value;
+             //判断是否为空
+             if(!uname){
+                 hb1.style.display = 'block';
+             }else if(!pwd){
+                 hb2.style.display = 'block';
+             }else{ //登录成功
+                 for(var i=0;i<jsonObj.length;i++){
+                     if( uname==jsonObj[i]['name'] && pwd==jsonObj[i]['psw'] )
+                         window.location.href='code0.html?name='+uname+'&psw='+pwd;
+                     else{
+                        window.location.href='code1.html?name='+uname+'&psw='+pwd;
+                     }
+                 }
+             }
+  
+  
+         }
+  
+  
+     </script>
+     <footer class="footer">
+        <p><small>&copy苗栗國厚生勞働省 & 公益財團法人網路安全委員會</small></p>
+    </footer>
+ </body>
+ </html>
+ 
