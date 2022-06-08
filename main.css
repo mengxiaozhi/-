@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    padding: 27px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -15,6 +15,18 @@ header {
 .title {
     display: flex;
 }
+
+.list {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.list img {
+    margin-top: 3px;
+}
+
 
 input[type=text],input[type=password] {
     padding: 7px 2px;
@@ -54,7 +66,7 @@ h2 {
     margin-left: 20px;
 }
 
-img {
+.title img {
     width: 70px;
     height: 70px;
 }
