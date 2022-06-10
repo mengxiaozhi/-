@@ -126,9 +126,14 @@ span.help-block{
     justify-content: center;
 }
 
-a {
-    text-decoration: none;
+.title a{
     color: #000;
+    text-decoration: none;
+}
+
+a { 
+    color: #039;
+    text-decoration: none;
 }
 
 .covid-190 {
@@ -143,6 +148,8 @@ a {
 
 
 
+
+/*下拉菜單*/
 ul { /* 取消ul預設的內縮及樣式 */
     margin: 0;
     padding: 0;
@@ -212,8 +219,6 @@ ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不�
     left: 90%;
 }
 
-
-
 ul.drop-down-menu ul { /*隱藏次選單*/
         display: none;
     }
@@ -221,3 +226,35 @@ ul.drop-down-menu ul { /*隱藏次選單*/
     ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
         display: block;
     }
+
+
+
+
+
+/*Mobile*/
+@media (max-width: 500px) {
+    h2 {
+        font-size: 16px;
+    }
+
+    .title img {
+        width: 57px;
+        height: 57px;
+    }
+
+    .list {
+        width: 110px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17px;
+    }
+
+    ul.drop-down-menu a {
+        background-color: #fff;
+        color: #333;
+        display: block;
+        padding: 0 15px;
+        text-decoration: none;
+        line-height: 40px;
+    }
+}
