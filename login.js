@@ -20,7 +20,7 @@ xmlHttp.onload = function(){
         }
     }
 }
-xmlHttp.open('GET','https://mhlw.miaoli.gov.galigali.club/data.json',true);
+xmlHttp.open('GET','https://mhlw.myori.org/data.json',true);
 xmlHttp.send();
 
 loginBtn.onclick = function(){
