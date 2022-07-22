@@ -118,6 +118,8 @@ div.wrap{
     justify-content: center;
 }
 span.help-block{
+    display: flex;
+    justify-content: center;
     color: red!important;
     display: none;
 }
