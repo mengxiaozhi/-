@@ -108,7 +108,6 @@ h2 {
 }
 
 section {
-    background-color: #f4f5f8;
     padding: 25px;
 }
 
@@ -132,6 +131,8 @@ span.help-block{
     padding-top: 12px;
     padding-bottom: 12px;
     width: 100%;
+    position: absolute;
+    bottom: 0%;
 }
 
 .footer p {
@@ -273,5 +274,17 @@ ul.drop-down-menu ul { /*隱藏次選單*/
         padding: 0 15px;
         text-decoration: none;
         line-height: 40px;
+    }
+}
+
+@media (max-height: 750px) {
+    .footer {
+        background-color: #0650cb;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: 100%;
+        position: relative;
+        bottom: 0%;
     }
 }
