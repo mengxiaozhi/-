@@ -4,12 +4,16 @@ body {
     font-family: 'Noto Sans SC', sans-serif;
     font-family: 'Varela Round', sans-serif;
     color: rgb(39, 39, 39);
+    background-color: #0650cb;
+    margin: 0; 
+    padding: 0;
 }
 
 header {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
 }
 
 .title {
@@ -27,15 +31,18 @@ header {
     margin-top: 3px;
 }
 
-
 input[type=text],input[type=password] {
-    padding: 7px 2px;
-    background-color: rgb(211, 233, 252);
-    height: 25px;
-    width: 300px;
-    border: 1px solid #707070;
-    border-radius: 4px;
-    font-size: 0.9em;
+    min-height: 44px;
+    width: 90%;
+    border: solid 1px rgba(33, 35, 38, 0.2);
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 22px!important;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 button {
@@ -54,9 +61,8 @@ button {
 
 .form-group {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
-
 
 h1 {
     text-align: center;
@@ -74,12 +80,10 @@ h2 {
     font-size: 10px;
 }
 
-
 .country {
     max-width: 120px;
     text-align: center;
 }
-
 
 .country img {
     width: 70px;
@@ -98,9 +102,8 @@ h2 {
 
 section {
     background-color: #f4f5f8;
-    padding: 25px;
+    padding: 100px;
 }
-
 
 div.wrap{
     margin: 1px auto;
@@ -112,12 +115,16 @@ span.help-block{
     display: none;
 }
 
+
 /*Footer*/
 .footer {
-    background-color: #ffffff;
     text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
+}
+
+.footer p {
+    color: #fff;
 }
 
 
@@ -144,9 +151,6 @@ a {
 .covid-191 {
     color: rgb(205, 38, 1);
 }
-
-
-
 
 
 /*下拉菜單*/
@@ -226,9 +230,6 @@ ul.drop-down-menu ul { /*隱藏次選單*/
     ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
         display: block;
     }
-
-
-
 
 
 /*Mobile*/
