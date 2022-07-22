@@ -257,9 +257,9 @@ ul.drop-down-menu ul { /*隱藏次選單*/
 
 
 /*Mobile*/
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     h2 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .title img {
@@ -268,17 +268,16 @@ ul.drop-down-menu ul { /*隱藏次選單*/
     }
 
     .list {
-        width: 110px;
+        width: 100px;
         display: flex;
         justify-content: space-between;
-        margin-top: 17px;
     }
 
     ul.drop-down-menu a {
         background-color: #fff;
         color: #333;
         display: block;
-        padding: 0 15px;
+        padding: 0 12px;
         text-decoration: none;
         line-height: 40px;
     }
