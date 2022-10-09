@@ -36,7 +36,7 @@ loginBtn.onclick = function(){
     }else{ //登录成功
         for(var i=0;i<jsonObj.length;i++){
            if( uname==jsonObj[i]['name'] && pwd==jsonObj[i]['psw'])
-                window.location.href='/code/'+uname+'.html?name=';
+                window.location.href='/code/'+uname+'.html';
             else{
 
                hb3.style.display = 'block';
