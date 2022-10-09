@@ -20,7 +20,7 @@ xmlHttp.onload = function(){
         }
     }
 }
-xmlHttp.open('GET','https://mhlw.myori.org/data.json',true);
+xmlHttp.open('GET','/data.json',true);
 xmlHttp.send();
 
 loginBtn.onclick = function(){
@@ -36,7 +36,7 @@ loginBtn.onclick = function(){
     }else{ //登录成功
         for(var i=0;i<jsonObj.length;i++){
            if( uname==jsonObj[i]['name'] && pwd==jsonObj[i]['psw'])
-                window.location.href='code0.html?name='+uname+'&psw='+pwd;
+                window.location.href='/code/'+uname+'.html?name=';
             else{
 
                hb3.style.display = 'block';

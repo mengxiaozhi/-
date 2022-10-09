@@ -2,36 +2,16 @@
   {
     "name": "root",
     "psw": "root",
-    "nationality": "miaoli"
+    "nationality": "test"
   },
   {
-    "name": "37120050114",
+    "name": "13253000002",
     "psw": "0114",
     "nationality": "miaoli"
   },
   {
-    "name": "20120060107",
+    "name": "13253000001",
     "psw": "0107",
     "nationality": "miaoli"
-  },
-  {
-    "name": "013433",
-    "psw": "0512",
-    "nationality": "taiwan"
-  },
-  {
-    "name": "2217982900",
-    "psw": "0000",
-    "nationality": "china"
-  },
-  {
-    "name": "1810327743",
-    "psw": "1119",
-    "nationality": "santa_rodelia"
-  },
-  {
-    "name": "1991018488",
-    "psw": "1109",
-    "nationality": "santa_rodelia"
   }
 ]
