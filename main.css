@@ -178,6 +178,10 @@ a {
     font-size: 75px;
 }
 
+.covid-192 {
+    color: rgb(255, 166, 0);
+    font-size: 75px;
+}
 
 /*下拉菜單*/
 ul { /* 取消ul預設的內縮及樣式 */
