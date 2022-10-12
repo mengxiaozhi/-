@@ -130,7 +130,22 @@ span.help-block{
     display: none;
 }
 
+#sitename {
+    background: #ffffff;
+    color: #77777a;
+    padding: 6px 15px;
+    font-size: 0.8em;
+    line-height: 1;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
 
+#sitename a {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
 /*Footer*/
 .footer {
     background-color: #0650cb;
