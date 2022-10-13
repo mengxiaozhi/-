@@ -24,6 +24,7 @@ header {
 
 .title {
     display: flex;
+    vertical-align: middle;
 }
 
 .list {
@@ -104,8 +105,9 @@ h2 {
 }
 
 .title img {
-    width: 65px;
-    height: 65px;
+    width: 200px;
+    height: 60px;
+    vertical-align: middle;
 }
 
 .button {
@@ -284,14 +286,14 @@ ul.drop-down-menu ul { /*隱藏次選單*/
 
 
 /*Mobile*/
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     h2 {
         font-size: 20px;
     }
 
     .title img {
-        width: 57px;
-        height: 57px;
+        width: 170px;
+        height: 50px;
     }
 
     .list {
