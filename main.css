@@ -26,6 +26,11 @@ header {
     display: flex;
     vertical-align: middle;
 }
+.title img {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+}
 .list {
     width: 170px;
     display: flex;
@@ -122,11 +127,6 @@ button {
 .country img {
     width: 70px;
     height: 70px;
-}
-.title img {
-    width: 200px;
-    height: 60px;
-    vertical-align: middle;
 }
 .button {
     display: flex;
