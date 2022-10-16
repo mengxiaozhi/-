@@ -1,0 +1,16 @@
+{
+    "short_name": "數位健康證明",
+    "name": "數位健康證明——苗栗國厚生勞動省",
+    "icons": [
+      {
+        "src": "/img/webapp-icon.png",
+        "type": "image/png",
+        "sizes": "48 × 48"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "#1f2022",
+    "background_color": "#1f2022"
+  }
