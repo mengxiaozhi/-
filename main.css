@@ -155,6 +155,14 @@ span.help-block{
 #sitename img {
     vertical-align: middle;
 }
+
+#choose {
+    max-width: 500px;
+    max-height: 300px;
+    padding: 15px;
+    border: 1px solid #0650cb;
+}
+
 /*Footer*/
 .footer {
     background-color: #0650cb;
