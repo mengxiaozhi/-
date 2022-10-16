@@ -33,12 +33,12 @@ loginBtn.onclick = function(){
         hb1.style.display = 'block';
     }else if(!pwd){
         hb2.style.display = 'block';
-    }else{ //登录成功
+    }else{ //對比json數據，登录成功
         for(var i=0;i<jsonObj.length;i++){
            if( uname==jsonObj[i]['name'] && pwd==jsonObj[i]['psw'])
                 window.location.href='/code/'+uname+'.html';
             else{
-
+                //未在json中找到數據
                hb3.style.display = 'block';
             }
         }
