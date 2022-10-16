@@ -35,7 +35,8 @@ header {
 }
 
 .list img {
-    margin-top: 3px;
+    height: 46.5px;
+    width: 35px;
 }
 
 input[type=text],input[type=password] {
@@ -157,7 +158,7 @@ span.help-block{
 }
 
 #choose {
-    max-width: 500px;
+    max-width: 300px;
     max-height: 300px;
     padding: 15px;
     border: 1px solid #0650cb;
