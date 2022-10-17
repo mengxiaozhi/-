@@ -1,4 +1,4 @@
-var nameInput = document.getElementById("username");
+var idInput = document.getElementById("nhi_id");
 var pwdInput = document.getElementById("pwd");
 var loginBtn = document.getElementById("login");
 var hb1 = document.getElementById("helpBlock1");
@@ -14,32 +14,33 @@ xmlHttp.onload = function(){
             //把json字符串解析成json对象
             jsonObj = JSON.parse(txt);
             console.info(jsonObj)
-            
         }else{
             console.info('数据返回失败！状态代码：'+xmlHttp.status+'状态信息：'+xmlHttp.statusText);
         }
     }
 }
+
 xmlHttp.open('GET','/data.json',true);
 xmlHttp.send();
 
 loginBtn.onclick = function(){
-
     //获取用户名和密码
-    var uname = nameInput.value;
+    var nhi_id = idInput.value;
     var pwd = pwdInput.value;
     //判断是否为空
-    if(!uname){
+    if(!nhi_id){
         hb1.style.display = 'block';
-    }else if(!pwd){
+    }
+    else if(!pwd){
         hb2.style.display = 'block';
-    }else{ //對比json數據，登录成功
+    }
+    //對比json數據，登录成功
+    else{
         for(var i=0;i<jsonObj.length;i++){
-           if( uname==jsonObj[i]['name'] && pwd==jsonObj[i]['psw'])
-                window.location.href='/code/'+uname+'.html';
+           if( nhi_id==jsonObj[i]['name'] && pwd==jsonObj[i]['psw'])
+                window.location.href='/code/'+nhi_id+'.html';
             else{
-                //未在json中找到數據
-               hb3.style.display = 'block';
+               hb3.style.display = 'block';//未在json中找到數據
             }
         }
     }

@@ -1,32 +1,27 @@
-[
-  {
-    "name": "root",
-    "psw": "root",
-    "nationality": "test"
-  },
-  {
-    "name": "13253000002",
-    "psw": "0114",
-    "nationality": "miaoli"
-  },
-  {
-    "name": "13253000001",
-    "psw": "0107",
-    "nationality": "miaoli"
-  },
-  {
-    "name":"13271000001",
-    "psw":"1109",
-    "nationality":"miaoli"
-  },
-  {
-    "name":"13251000001",
-    "psw":"0222",
-    "nationality":"miaoli"
-  },
-  {
-    "name":"13251000002",
-    "psw":"1025",
-    "nationality":"miaoli"
-  }
-]
+  [
+    {
+      "name": "13253000002",
+      "psw": "0114",
+      "nationality": "miaoli"
+    },
+    {
+      "name": "13253000001",
+      "psw": "0107",
+      "nationality": "miaoli"
+    },
+    {
+      "name":"13271000001",
+      "psw":"1109",
+      "nationality":"miaoli"
+    },
+    {
+      "name":"13251000001",
+      "psw":"0222",
+      "nationality":"miaoli"
+    },
+    {
+      "name":"13251000002",
+      "psw":"1025",
+      "nationality":"miaoli"
+    }
+  ]

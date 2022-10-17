@@ -32,7 +32,7 @@
  <body>
     <header>
         <div class="title">
-            <a href="/"><img src="/img/厚生勞動省.png" alt=""></a>
+            <a href="/"><img src="/img/厚生勞動省.png" alt="厚生勞動省｜首頁"></a>
         </div>
         <div class="list">
             <div class="lang-list">
@@ -66,13 +66,13 @@
         <div class="wrap">
             <form>
             <div class="form-group">
-                <label for="username"><h3>國民健康保險編號(外籍人士填護照號碼)</h3></label>
-                <input type="text" class="form-control" id="username" placeholder="國民健康保險編號/護照編號">
+                <label for="nhi_id"><h3>國民健康保險編號(外籍人士填護照號碼)</h3></label>
+                <input type="text" class="form-control" id="nhi_id" placeholder="國民健康保險編號/護照編號" oninput="if(value.length>11)value=value.slice(0,11)">
                 <span id="helpBlock1" class="help-block">國民健康保險/護照編號不能為空</span>
             </div>
             <div class="form-group">
                 <label for="pwd"><h3>出生月日(例:0315)</h3></label>
-                <input type="password" class="form-control" id="pwd" placeholder="出生月日(例:0315)">
+                <input type="password" class="form-control" id="pwd" placeholder="出生月日(例:0315)" oninput="if(value.length>4)value=value.slice(0,4)">
                 <span id="helpBlock2" class="help-block">出生月日不能為空</span>
             </div>
                 <span id="helpBlock3" class="help-block">厚生勞働省未存在您的健康紀錄</span>
