@@ -67,7 +67,7 @@
             <form>
             <div class="form-group">
                 <label for="nhi_id"><h3>國民健康保險編號(外籍人士填護照號碼)</h3></label>
-                <input type="text" class="form-control" id="nhi_id" placeholder="國民健康保險編號/護照編號" oninput="if(value.length>11)value=value.slice(0,11)">
+                <input type="text" class="form-control" id="nhi_id" placeholder="國民健康保險編號/護照編號" oninput="if(value.length>9)value=value.slice(0,9)">
                 <span id="helpBlock1" class="help-block">國民健康保險/護照編號不能為空</span>
             </div>
             <div class="form-group">
@@ -87,30 +87,6 @@
     </section>
 <!--section-->    
     <script type="text/javascript" src="/login.js"></script>
-    <script>
-        if(("standalone" in window.navigator) && window.navigator.standalone){
-        
-            // If you want to prevent remote links in standalone web apps opening Mobile Safari, change 'remotes' to true
-            var noddy, remotes = false;
-            
-            document.addEventListener('click', function(event) {
-                
-                noddy = event.target;
-                
-                // Bubble up until we hit link or top HTML element. Warning: BODY element is not compulsory so better to stop on HTML
-                while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
-                    noddy = noddy.parentNode;
-                }
-                
-                if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
-                {
-                    event.preventDefault();
-                    document.location.href = noddy.href;
-                }
-            
-            },false);
-        }
-        </script>
      <footer class="footer">
         <p><small>&copy苗栗國厚生勞働省 & 公益財團法人網路安全委員會</small></p>
     </footer>
